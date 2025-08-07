@@ -6,7 +6,7 @@ creation_rules:
     key_groups:
       - age:
           - age1haxzj5xhxtpag457wwykd4alk7x0cfdzc0gcfgltlvuh7zfywveqz53gjl # secrets-operator-key
-          - <YOUR-AGE-PUBLIC-KEY-HERE>
+          - age10vvdtwte8a0pr2ffuu4r0ln7584q9dst7mkrn22lwkp6amsqm4us68tn0s
 stores:
   yaml:
     indent: 2
