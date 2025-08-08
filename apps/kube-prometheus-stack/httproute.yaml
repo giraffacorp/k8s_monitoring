@@ -4,6 +4,8 @@ kind: HTTPRoute
 metadata:
   name: alertmanager-route
   namespace: monitoring
+  annotations:
+    argocd.argoproj.io/compare-options: ServerSideDiff=true
 spec:
   parentRefs:
     - name: gateway-cloudflare
@@ -24,6 +26,8 @@ kind: HTTPRoute
 metadata:
   name: prometheus-route
   namespace: monitoring
+  annotations:
+    argocd.argoproj.io/compare-options: ServerSideDiff=true
 spec:
   parentRefs:
     - name: gateway-cloudflare
