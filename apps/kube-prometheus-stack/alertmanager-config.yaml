@@ -25,6 +25,14 @@ spec:
           - name: severity
             value: critical
             matchType: =
+      - receiver: healthchecks
+        matchers:
+          - name: alertname
+            value: Watchdog
+            matchType: =
+        groupWait: 0s
+        groupInterval: 1m
+        repeatInterval: 1m
   inhibitRules:
     - equal:
         - "alertname"
@@ -39,6 +47,10 @@ spec:
           matchType: =
   receivers:
     - name: "null"
+    - name: healthchecks
+      webhookConfigs:
+        - url: "https://hc-ping.com/2adfc6a0-aa5e-444d-9dba-de95c1566249"
+          sendResolved: true
     - name: pushover
       pushoverConfigs:
         - html: true
