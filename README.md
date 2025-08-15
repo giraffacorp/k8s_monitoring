@@ -13,8 +13,7 @@ This repository serves as a template for deploying applications to Kubernetes cl
 ├── .taskfiles/                 # Custom Taskfile scripts modules
 ├── apps/                       # Core application configurations
 ├── argocd/                     # ArgoCD definitions
-│   ├── app-of-apps.yaml
-│   └── applications/
+│   └── appset.yaml
 ├── .envrc                      # Direnv environment variables
 ├── .gitattributes              # Git attributes configuration
 ├── .gitignore                  # Git ignore rules
