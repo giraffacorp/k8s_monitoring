@@ -35,9 +35,9 @@ grafana.ini:
     email_attribute_path: email
     login_attribute_path: username
     name_attribute_path: full_name
-    auth_url: https://keycloak.maddin.dev/auth/realms/cluster/protocol/openid-connect/auth
-    token_url: https://keycloak.maddin.dev/auth/realms/cluster/protocol/openid-connect/token
-    api_url: https://keycloak.maddin.dev/auth/realms/cluster/protocol/openid-connect/userinfo
+    auth_url: https://keycloak.maddin.dev/auth/realms/homelab/protocol/openid-connect/auth
+    token_url: https://keycloak.maddin.dev/auth/realms/homelab/protocol/openid-connect/token
+    api_url: https://keycloak.maddin.dev/auth/realms/homelab/protocol/openid-connect/userinfo
     role_attribute_path: >-
       contains(grafana_roles[*], 'admin') && 'Admin' ||  contains(grafana_roles[*], 'editor') && 'Editor'
       || contains(grafana_roles[*], 'viewer') && 'Viewer'
