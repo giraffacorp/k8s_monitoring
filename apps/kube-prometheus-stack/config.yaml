@@ -1,0 +1,10 @@
+---
+appName: ""
+appProject: "monitoring"
+destNamespace: "monitoring"
+namespaceMetadata: {}
+srcTargetRevision: ""
+syncOptions:
+  - ServerSideApply=true
+labels: {}
+annotations: {}
